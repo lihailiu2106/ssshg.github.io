@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Final test</title>
+    <link rel="stylesheet" type="text/css" href="test_style.css" />
+  </head>
+  <body>
+    <div class="div1">
+      <h1 class="h1">Simple Calculator using JS</h1>
+      <div class="line"></div>
+      <div style="margin-left: 25%;margin-top: 4%">
+        <label>Enter 1st value:</label>
+        <input type="text" id="v1" onkeyup="check()"/>
+      </div>
+      <br />
+      <div style="margin-left: 25%">
+        <label style="font-size: 15px;">Enter 2nd value:</label>
+        <input type="text" id="v2" onkeyup="check()" />
+      </div>
+      <br />
+      <div style="margin-left: 37%">
+        <label style="font-size: 15px;">result:</label>
+        <input type="text" id="re" />
+      </div>
+      <br />
+      <div style="margin-left: 20%">
+        <button class="btn" onclick="add()">+</button>
+        <button class="btn" onclick="minus()">-</button>
+        <button class="btn" onclick="times()">*</button>
+        <button class="btn" onclick="into()">/</button>
+        <button class="btn" onclick="sqrt()">^(1/n)</button>
+        <button class="btn" onclick="jiecheng()">!</button>
+        <br />   
+         <button class="btn" onclick="mode()">%</button>
+        <button class="btn" onclick="cifang()">^n</button>
+        <button class="btn" onclick="fexp()">e^n</button>
+        <button class="btn" onclick="duishu()">log</button>
+        <button class="btn" onclick="duishue()">ln</button>
+        <button class="btn" onclick="duishu10()">lg</button>
+        <br />
+   
+        <button class="btn" onclick="fsin()">sin</button>
+        <button class="btn" onclick="fcos()">cos</button>
+        <button class="btn" onclick="ftan()">tan</button>
+        <button class="btn" onclick="fasin()">asin</button>
+        <button class="btn" onclick="facos()">acos</button>
+        <button class="btn" onclick="fatan()">atan</button>
+        <button class="btn" onclick="cle()">C</button>
+      </div>
+      <div class="line"></div>
+      <p style="font-size: 12px;">注意：对于单元运算(阶乘、三角函数、反三角函数、e的n次方)，进行计算的值为1st value的值。对于次方和开方两个计算，当2nd value不输入时，默认其值为2.</p>
+    </div>
+    <script src="final_test.js "></script>
+  </body>
+</html>
